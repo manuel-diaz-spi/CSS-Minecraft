@@ -125,7 +125,7 @@ const BuildManager = (() => {
     if (savedBuilds.length === 0) {
       console.log("[Load Build] No saved builds found.");
       alert(
-        "No saved builds found. Save a build first!"
+        "No saved builds found. Use the Save button to save your current build first!"
       );
       return;
     }
@@ -181,7 +181,7 @@ const BuildManager = (() => {
     if (savedBuilds.length === 0) {
       console.log("[Scoreboard] No builds on the scoreboard yet.");
       alert(
-        "Scoreboard is empty. Save and publish some builds first!"
+        "Scoreboard is empty. Save some builds first!"
       );
       return;
     }
