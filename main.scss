@@ -249,6 +249,69 @@ a {
 		}
 	}
 
+	& .action-buttons {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+		gap: .5rem;
+
+		& > .label {
+			grid-column: 1 / span 3;
+		}
+
+		& button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: .3rem;
+			inline-size: auto;
+			padding-inline: .6rem;
+			block-size: 3rem;
+			border: none;
+			border-radius: .3rem;
+			background-color: #0003;
+			font-size: .85rem;
+			color: inherit;
+			font-family: inherit;
+			white-space: nowrap;
+
+			--icon-display: inline-block;
+			--icon-size: 1.2rem;
+
+			&:hover {
+				background-color: #0005;
+			}
+
+			&:active {
+				background-color: #0007;
+			}
+
+			&.save-build {
+				background-color: #1a7a2e55;
+
+				&:hover {
+					background-color: #1a7a2e88;
+				}
+			}
+
+			&.load-build {
+				background-color: #2a5a9e55;
+
+				&:hover {
+					background-color: #2a5a9e88;
+				}
+			}
+
+			&.scoreboard {
+				background-color: #9e7a2a55;
+
+				&:hover {
+					background-color: #9e7a2a88;
+				}
+			}
+		}
+	}
+
 	&:has(.up:active) ~ main .down {
 		animation-play-state: running;
 	}

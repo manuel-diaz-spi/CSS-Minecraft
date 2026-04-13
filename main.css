@@ -246,6 +246,57 @@ a {
 .controls .move-buttons button:active {
   background-color: rgba(0, 0, 0, 0.4666666667);
 }
+.controls .action-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 0.5rem;
+}
+.controls .action-buttons > .label {
+  grid-column: 1/span 3;
+}
+.controls .action-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  inline-size: auto;
+  padding-inline: 0.6rem;
+  block-size: 3rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.85rem;
+  color: inherit;
+  font-family: inherit;
+  white-space: nowrap;
+  --icon-display: inline-block;
+  --icon-size: 1.2rem;
+}
+.controls .action-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.3333333333);
+}
+.controls .action-buttons button:active {
+  background-color: rgba(0, 0, 0, 0.4666666667);
+}
+.controls .action-buttons button.save-build {
+  background-color: rgba(26, 122, 46, 0.3333333333);
+}
+.controls .action-buttons button.save-build:hover {
+  background-color: rgba(26, 122, 46, 0.5333333333);
+}
+.controls .action-buttons button.load-build {
+  background-color: rgba(42, 90, 158, 0.3333333333);
+}
+.controls .action-buttons button.load-build:hover {
+  background-color: rgba(42, 90, 158, 0.5333333333);
+}
+.controls .action-buttons button.scoreboard {
+  background-color: rgba(158, 122, 42, 0.3333333333);
+}
+.controls .action-buttons button.scoreboard:hover {
+  background-color: rgba(158, 122, 42, 0.5333333333);
+}
 .controls:has(.up:active) ~ main .down {
   animation-play-state: running;
 }

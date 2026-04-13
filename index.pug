@@ -80,6 +80,13 @@
 				<button class="look-down icon:keyboard-arrow-down" title="Look down"></button>
 			</div>
 		</div>
+
+		<div class="action-buttons">
+			<span class="label">Build</span>
+			<button class="save-build icon:save" title="Save Build" onclick="BuildManager.saveBuild()">Save</button>
+			<button class="load-build icon:folder-open" title="Load Build" onclick="BuildManager.loadBuild()">Load</button>
+			<button class="scoreboard icon:leaderboard" title="Scoreboard" onclick="BuildManager.showScoreboard()">Score</button>
+		</div>
 	</section>
 
 	<main>
@@ -139,4 +146,5 @@
 			</div>
 		</div>
 	</main>
+	<script src="./build-manager.js"></script>
 </html>
